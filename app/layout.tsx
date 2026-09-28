@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
+import localFont from 'next/font/local';
+import { Orbitron } from 'next/font/google';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const orbitron = localFont({
+  src: '../public/fonts/Orbitron-VariableFont_wght.ttf', // Adjust path based on your file location
+  variable: '--font-orbitron',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -21,9 +18,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${orbitron.variable} ${orbitron.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-[##F0F9F5]">{children}</body>
     </html>
   );
 }

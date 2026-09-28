@@ -5,3 +5,13 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        orbitron: ['var(--font-orbitron)', 'sans-serif'],
+      },
+    },
+  },
+};

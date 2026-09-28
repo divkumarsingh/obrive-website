@@ -1,4 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
 @import "tailwindcss";
+
+.tech-paragraph {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+
+  line-height: 1.65;
+  letter-spacing: 0.03em;
+  color: #1a1a1a;
+}
 
 @custom-variant mobile (@media (max-width: 767px));
 @custom-variant tablet (@media (max-width: 768px) and (max-width: 1199px));
@@ -8,9 +20,19 @@
 @custom-variant desktop-wide (@media (min-width: 1280px));
 
 :root {
-  --background: #F1F9F4;
+  --background: #F0F9F5;
   --header-bg: #5BD0B5;
 
   --text-primary: #0C4B4D;
 
+}
+
+/* app/globals.css */
+html,
+body {
+  min-height: 100vh;
+  background-color: #F0F9F5;
+  /* Replace with your color */
+  margin: 0;
+  padding: 0;
 }

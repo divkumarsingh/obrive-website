@@ -35,10 +35,10 @@ export function Button({
     onClick,
     "aria-label": ariaLabel
 }: ButtonProps) {
-    const styles = cn("rounded-[40px] items-center justify-center focus-visible:outline-none cursor-pointer",
+    const styles = cn(className, "rounded-[40px] items-center justify-center focus-visible:outline-none cursor-pointer",
         variantStyles[variant],
         sizeStyles[size],
-        className
+
     )
     return (
         <button

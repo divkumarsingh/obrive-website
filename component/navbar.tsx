@@ -10,7 +10,7 @@ import buyIcon from "../public/svg/buy-icon.svg";
 
 export function NavBar({ }) {
     return (
-        <header className="sticky top-[38px]   z-50 bg-gradient-to-b from-[#59D0B5] to-[#CAEDE5] rounded-[60px] mx-[30px]">
+        <header className="sticky top-[38px]  font-obritron z-50 bg-gradient-to-b from-[#59D0B5] to-[#CAEDE5] rounded-[60px] mx-[30px]">
             <div className="flex items-center justify-between px-[30px]">
                 <Link href="/">
                     <Image className="w-20 h-20 p-4 " src={Logo} alt="obrive-technology logo " />
